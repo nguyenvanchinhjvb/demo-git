@@ -25,12 +25,6 @@ use Psy\Shell as PsyShell;
 class SyslogShell extends Shell
 {
 
-    /**
-     * Start the shell and interactive console.
-     *
-     * @return int|null
-     */
-   
          public function initialize()
     {
         parent::initialize();
