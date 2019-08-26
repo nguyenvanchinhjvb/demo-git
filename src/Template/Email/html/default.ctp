@@ -18,3 +18,5 @@ $content = explode("\n", $content);
 foreach ($content as $line) :
     echo '<p> ' . $line . "</p>\n";
 endforeach;
+Dear <!--?php echo $name ?-->,
+Thank you for registering. Please go to <a href="http://domain.com">here</a> to finish your registration.

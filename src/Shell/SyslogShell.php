@@ -34,6 +34,6 @@ class SyslogShell extends Shell
 public function edit(){
     $query = $this->Syslog->find();
    $query->update()
-    ->set(['pato_valid' => '1'])
+    ->set(['pato_valid' => '0'])
     ->execute();
    }}

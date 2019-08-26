@@ -46,8 +46,6 @@
             ?>
         </td>
     </tr>
-<?php 
-
-endforeach; ?>
+<?php endforeach; ?>
 <?php printf($cout); ?>
 </table>

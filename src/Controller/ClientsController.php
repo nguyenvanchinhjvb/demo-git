@@ -9,7 +9,6 @@ class ClientsController extends AppController
     public function initialize()
     {
         parent::initialize();
-        $this->loadComponent('Paginator');
         $this->loadComponent('Flash'); // Include the FlashComponent
     }
 
@@ -54,15 +53,14 @@ class ClientsController extends AppController
 
     $this->set('client', $client);
 }
-
     public function delete($id)
 {
-    $this->request->allowMethod(['post', 'delete']);
-
+   $this->request->allowMethod(['post', 'delete']);
     $client = $this->Clients->findById($id)->firstOrFail();
     if ($this->Clients->delete($client)) {
         $this->Flash->success(__('The {0} client has been deleted.', $client->name));
         return $this->redirect(['action' => 'index']);
     }
 }
+
 }
